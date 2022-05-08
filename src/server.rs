@@ -1,8 +1,8 @@
 use tonic::{transport::Server};
 
 use belajar_rust_grpc::api::{
-    hello::HelloService,
-    hello_gen::hello_server::HelloServer,
+    hello_service::HelloService,
+    hello::hello_server::HelloServer,
 };
 
 #[tokio::main]

@@ -1,4 +1,4 @@
-use belajar_rust_grpc::api::hello_gen::{
+use belajar_rust_grpc::api::hello::{
   None,
   hello_client::HelloClient,
 };
