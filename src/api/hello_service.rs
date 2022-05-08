@@ -8,6 +8,7 @@ use crate::api::hello::{
     HelloReply,
     hello_server::{
         Hello,
+        HelloServer,
     },
 };
 
@@ -28,4 +29,9 @@ impl Hello for HelloService {
 
         Ok(Response::new(response))
     }
+}
+
+pub fn build_hello_server() -> HelloServer::<HelloService> {
+    let hello_service = HelloService::default();
+    HelloServer::new(hello_service)
 }
