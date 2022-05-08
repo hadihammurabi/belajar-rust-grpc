@@ -1,0 +1,12 @@
+syntax = "proto3";
+package hello;
+
+service Hello {
+  rpc Say(None) returns (HelloReply);
+}
+
+message None {}
+
+message HelloReply {
+  string message = 1;
+}
